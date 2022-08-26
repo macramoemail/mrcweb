@@ -87,7 +87,7 @@ session_start();
             unset($_SESSION['success']);
         }
         echo('<table class="mt-3 table table-bordered">'."\n");
-        $stmt = $pdo->query("SELECT name, email, password, user_id FROM users");
+        $stmt = $pdo->query("SELECT name, email, password, user_id FROM users_mac");
         while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
             echo "<tr><td>";
             echo(htmlentities($row['name']));
