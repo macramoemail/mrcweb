@@ -1,7 +1,7 @@
 <?php
 require_once "connection.php";
 
-$sql = "INSERT INTO users (name, email, password)
+$sql = "INSERT INTO users_mac (name, email, password)
           VALUES (:name, :email, :password)";
 $stmt = $pdo->prepare($sql);
 $stmt->execute(array(
